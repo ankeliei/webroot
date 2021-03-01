@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="71ca1007-3096-4967-8980-463fe1fca53a" name="47.98.151.130" url="http://47.98.151.130:5000">
+        <fileTransfer rootFolder="/www/wwwroot/web/dev/lightapp/webroot/" accessType="SFTP" host="47.98.151.130" port="22" sshConfigId="4e26c0a3-4564-4531-919d-a54a53ca4296" sshConfig="ank@47.98.151.130:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
