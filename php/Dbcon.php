@@ -27,6 +27,10 @@ class Dbcon{
         $this->con->close();
     }
 
+    public function prepare($sql){
+        return $this->con->prepare($sql);
+    }
+
 
     public function setSql($str){
         $this->sql = $str;
