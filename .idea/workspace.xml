@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bd23dab-4945-4aeb-950c-61e4ebbccb6f" name="默认的" comment="" />
+    <list default="true" id="9bd23dab-4945-4aeb-950c-61e4ebbccb6f" name="默认的" comment="默认的">
+      <change afterPath="$PROJECT_DIR$/api/getNewsByKind.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/getNewsCountByKind.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/onHeartbeat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd9a8bb4-e532-47fc-81fc-46f7e18a908c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd9a8bb4-e532-47fc-81fc-46f7e18a908c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/getNews.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/getNews.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/onLogin.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/aa_static" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -40,6 +49,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -57,11 +67,74 @@
       <updated>1614581526251</updated>
       <workItem from="1614581527461" duration="137000" />
       <workItem from="1614581700059" duration="51000" />
-      <workItem from="1614581753708" duration="13130000" />
+      <workItem from="1614581753708" duration="13411000" />
+      <workItem from="1614656333076" duration="16188000" />
+      <workItem from="1614770253401" duration="20671000" />
+      <workItem from="1614831045893" duration="9563000" />
     </task>
+    <task id="LOCAL-00001" summary="默认的">
+      <created>1614609657476</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614609657476</updated>
+    </task>
+    <task id="LOCAL-00002" summary="新建gitignore文件">
+      <created>1614711100113</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614711100113</updated>
+    </task>
+    <task id="LOCAL-00003" summary="支持参数化查询">
+      <created>1614711122625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614711122625</updated>
+    </task>
+    <task id="LOCAL-00004" summary="拉取文章内容接口">
+      <created>1614711160885</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614711160885</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="默认的" />
+    <MESSAGE value="新建gitignore文件" />
+    <MESSAGE value="支持参数化查询" />
+    <MESSAGE value="拉取文章内容接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="拉取文章内容接口" />
   </component>
 </project>

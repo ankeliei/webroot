@@ -2,6 +2,8 @@
 session_start();
 
 require_once 'php/Openid.php';
+
+//拿到用户的openid
 $openid = new Openid($_GET['code']);
 $openid = $openid->getOpenid();
 $_SESSION['openid'] = $openid;
@@ -25,8 +27,6 @@ $sql = "INSERT INTO clickHistory (id, openid, time, ip, province, city, lat, lng
     $arrResult['result']['location']['lng']."\")";
 $con->setSql($sql);
 $res = $con->getRes();
-//echo $res;
-//echo $sql;
 
 $sql = "select openid, ip, times from history where openid = '".$openid."' and ip = '".$ip."'";
 $con->setSql($sql);
