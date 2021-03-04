@@ -1,17 +1,27 @@
 <?php
+    $sessionid = $_COOKIE['JSESSIONID'];
+    session_id($sessionid);
+    session_start();    //恢复session
+    $openid = $_SESSION['openid'];
+    $ip = $_SESSION['ip'];
+
     require_once "../php/Dbcon.php";
     $con = new Dbcon();
-
     $id = $_REQUEST['id'];
-    $sql = "select * from news where (id = ?)";
 
+//    设置文章浏览量
+    $sql = "update news set readCount = readCount+1 where (id = ?)";
+    $stmt = $con->prepare($sql);
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+
+//    设置文章阅览量加一
     $news = array();
-
+    $sql = "select * from news where (id = ?)";
     $stmt = $con->prepare($sql);
     $stmt->bind_param("i", $id);
     $stmt->execute();
     $res = $stmt->get_result();
-
     if($res->num_rows == 1){
         while ($row = $res->fetch_assoc()){
             $news['id'] = $row['id'];
