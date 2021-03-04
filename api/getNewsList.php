@@ -2,7 +2,7 @@
 require_once "../php/Dbcon.php";
 $con = new Dbcon();
 
-$sql = "select * from news";
+$sql = "select * from news limit 10";
 $con->setSql($sql);
 
 $res = $con->getRes();
