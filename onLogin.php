@@ -41,7 +41,9 @@ else{
 $r['sessionid'] = session_id();
 $r['openid'] = $openid;
 
-echo json_encode($r);
+//echo json_encode($r);
+echo session_id();
+
 //$sql = "INSERT INTO clickHistory (id, openid, time, ip, province, city, lat, lng) VALUES ".
 //    "(NULL, \"".$openid."\", CURRENT_TIMESTAMP, \"".$ip."\", \"".
 //    $arrResult['result']['ad_info']['province']."\", \"".
