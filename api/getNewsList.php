@@ -2,7 +2,7 @@
 require_once "../php/Dbcon.php";
 $con = new Dbcon();
 
-$sql = "select * from news limit 10";
+$sql = "select * from news where id >=((SELECT MAX(id) FROM news)-(SELECT MIN(id) FROM news)) * RAND() + (SELECT MIN(id) FROM news) limit 10";
 $con->setSql($sql);
 
 $res = $con->getRes();
