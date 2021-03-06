@@ -15,7 +15,6 @@
     $stmt->bind_param("i", $id);
     $stmt->execute();
 
-//    设置文章阅览量加一
     $news = array();
     $sql = "select * from news where (id = ?)";
     $stmt = $con->prepare($sql);
